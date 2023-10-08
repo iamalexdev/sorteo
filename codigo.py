@@ -39,7 +39,7 @@ def generar_numero(message):
         worksheet.cell(row=row, column=1, value=chat_id)
         worksheet.cell(row=row, column=2, value=message.chat.username)
         worksheet.cell(row=row, column=3, value=numero_generado)
-        workbook.save("usuarios.xlsx")
+        workbook.save("https://github.com/iamalexdev/sorteo/blob/40b6f23dc1e92a7e20d896cfa5a8f6cc8377d932/usuarios.xlsx")
     else:
         bot.reply_to(message, f"🍀 Ya tiene número para el sorteo, especificamente el: {numeros_generados[chat_id]} ¡No intente sacar otro!\n\n👮 Creado por @Alex_GlezRM")
 
