@@ -10,4 +10,6 @@ def send_welcome(message):
     bot.reply_to(message, f"👋 Hola @{message.from_user.username}!\n\n❗️ Este bot solo funciona cuando hay sorteos en @fifacuba, mantente al tanto\n\n👮 Creado por @Alex_GlezRM")
  #Manejar el comando /archivo1
 
-bot.polling()
+if __name__=='__main__':
+    print('iniciando')
+    bot.infinity_polling()
