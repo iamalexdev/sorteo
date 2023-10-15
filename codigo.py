@@ -36,4 +36,7 @@ def handle_payment_proof(message):
 
 
 # Iniciar el bot
-bot.polling()
+if __name__=='__main__':
+   print('iniciado')
+   bot.infinity_polling()
+
