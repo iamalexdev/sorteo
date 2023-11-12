@@ -76,7 +76,7 @@ def handle_query(call):
 
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=f"👋 Hola @{call.message.from_user.username}.\n\n💰 Bienvenido a la mejor tienda de recarga para Free Fire en Cuba\n\n⚙️ Nuestro objetivo es garantizar al usuario una oportunidad comoda y automatizada para recargar y así no realentizar el proceso esperando por OTROS.\n\n⬇️ Estas en tu casa FreeWise\n\n /Creado por *Alex Gonzalez*/", reply_markup=markup, parse_mode='Markdown')
  
-    if call.data=="Button3":
+    if call.data=="button3":
          
         markup= telebot.types.InlineKeyboardMarkup()
         button9= telebot.types.InlineKeyboardButton(text="MLC", callback_data="button9")
